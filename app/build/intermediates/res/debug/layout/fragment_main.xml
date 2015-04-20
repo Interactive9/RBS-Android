@@ -4,8 +4,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context="com.Interactive9.RealBombSquad.MainActivity$PlaceholderFragment"
-    android:id="@+id/butt">
+    tools:context="com.Interactive9.RealBombSquad.MainActivity$PlaceholderFragment">
 
     <Button
         android:layout_width="wrap_content"
@@ -16,5 +15,7 @@
         android:layout_centerHorizontal="true"
         android:onClick="startBombing"/>
 
+
+
 </RelativeLayout>
-<!-- From: file:/Users/Tobias/AndroidStudioProjects/RealBombSquad/app/src/main/res/layout/fragment_main.xml -->
+<!-- From: file:/C:/Users/Fabian%20Winquist/Documents/GitHub/RBS-Android/app/src/main/res/layout/fragment_main.xml -->

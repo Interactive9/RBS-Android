@@ -2,7 +2,6 @@ package com.Interactive9.RealBombSquad;
 
 import com.unity3d.player.*;
 import android.app.NativeActivity;
-import android.content.Intent;
 import android.content.res.Configuration;
 import android.graphics.PixelFormat;
 import android.os.Bundle;
@@ -86,10 +85,4 @@ public class UnityPlayerNativeActivity extends NativeActivity
 	@Override public boolean onKeyDown(int keyCode, KeyEvent event)   { return mUnityPlayer.injectEvent(event); }
 	@Override public boolean onTouchEvent(MotionEvent event)          { return mUnityPlayer.injectEvent(event); }
 	/*API12*/ public boolean onGenericMotionEvent(MotionEvent event)  { return mUnityPlayer.injectEvent(event); }
-    @Override
-    public void onBackPressed() {
-
-        super.onBackPressed();
-
-    }
 }

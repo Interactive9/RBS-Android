@@ -33,6 +33,11 @@ public class MainActivity extends Activity {
         getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
     }
+    public void startBombing(View view)
+    {
+        Intent intent = new Intent(this, UnityPlayerNativeActivity.class);
+        startActivity(intent);
+    }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -48,11 +53,7 @@ public class MainActivity extends Activity {
 
         return super.onOptionsItemSelected(item);
     }
-    public void startBombing(View view)
-    {
-        Intent intent = new Intent(this, UnityPlayerNativeActivity.class);
-        startActivity(intent);
-    }
+
     /**
      * A placeholder fragment containing a simple view.
      */
@@ -68,5 +69,4 @@ public class MainActivity extends Activity {
             return rootView;
         }
     }
-
 }
