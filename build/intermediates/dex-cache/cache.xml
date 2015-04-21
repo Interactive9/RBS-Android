@@ -2,46 +2,25 @@
 <items version="2" >
 
     <item
-        jar="C:\Users\Fabian Winquist\Documents\GitHub\RBS-Android\app\libs\QCARUnityPlayer.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="67c3736317eb057be70ac2395915d952cc3e77bd">
-        <dex dex="C:\Users\Fabian Winquist\Documents\GitHub\RBS-Android\app\build\intermediates\pre-dexed\debug\QCARUnityPlayer-ae87066ab4468edfc2891aecc6c7a8633bdb9e4f.jar" />
-    </item>
-    <item
-        jar="C:\Users\Fabian Winquist\Documents\GitHub\RBS-Android\app\libs\unity-classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="572e54e8a1acce65303f6688286160e9d2dc4329">
-        <dex dex="C:\Users\Fabian Winquist\Documents\GitHub\RBS-Android\app\build\intermediates\pre-dexed\debug\unity-classes-fded80e07c487da8f5cf8168fcbe36c8d7366823.jar" />
-    </item>
-    <item
-        jar="C:\Users\Fabian Winquist\Documents\GitHub\RBS-Android\app\libs\Vuforia.jar"
+        jar="/Users/Tobias/Documents/LTH/Avancerad Interaktionsdesign/RBS-Android/app/libs/Vuforia.jar"
         jumboMode="false"
         revision="22.0.1"
         sha1="bccdae2108e5625f572836e25a2a785afa2f2e0f">
-        <dex dex="C:\Users\Fabian Winquist\Documents\GitHub\RBS-Android\app\build\intermediates\pre-dexed\debug\Vuforia-b06cb69d75b38998591c4c47df7e351cfcb17cda.jar" />
+        <dex dex="/Users/Tobias/Documents/LTH/Avancerad Interaktionsdesign/RBS-Android/app/build/intermediates/pre-dexed/debug/Vuforia-be83b2feb0a9895d9a611356eff13dc637ee51bf.jar" />
     </item>
     <item
-        jar="C:\Users\Fabian Winquist\Desktop\vuforia\build\java\RealBombSquad\app\libs\Vuforia.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="bccdae2108e5625f572836e25a2a785afa2f2e0f">
-        <dex dex="C:\Users\Fabian Winquist\Desktop\vuforia\build\java\RealBombSquad\app\build\intermediates\pre-dexed\debug\Vuforia-af7598586171de650c5cb68caaf13420291ccfa3.jar" />
-    </item>
-    <item
-        jar="C:\Users\Fabian Winquist\Desktop\vuforia\build\java\RealBombSquad\app\libs\unity-classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="572e54e8a1acce65303f6688286160e9d2dc4329">
-        <dex dex="C:\Users\Fabian Winquist\Desktop\vuforia\build\java\RealBombSquad\app\build\intermediates\pre-dexed\debug\unity-classes-89767265585185e1550ced5e5bba3165bb1c2eb9.jar" />
-    </item>
-    <item
-        jar="C:\Users\Fabian Winquist\Desktop\vuforia\build\java\RealBombSquad\app\libs\QCARUnityPlayer.jar"
+        jar="/Users/Tobias/Documents/LTH/Avancerad Interaktionsdesign/RBS-Android/app/libs/QCARUnityPlayer.jar"
         jumboMode="false"
         revision="22.0.1"
         sha1="67c3736317eb057be70ac2395915d952cc3e77bd">
-        <dex dex="C:\Users\Fabian Winquist\Desktop\vuforia\build\java\RealBombSquad\app\build\intermediates\pre-dexed\debug\QCARUnityPlayer-3ccc6487bbc2ebbdf8f87132b276e4d9425929f9.jar" />
+        <dex dex="/Users/Tobias/Documents/LTH/Avancerad Interaktionsdesign/RBS-Android/app/build/intermediates/pre-dexed/debug/QCARUnityPlayer-59276cfad87d869688583d8fc628a4f717dea02e.jar" />
+    </item>
+    <item
+        jar="/Users/Tobias/Documents/LTH/Avancerad Interaktionsdesign/RBS-Android/app/libs/unity-classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="572e54e8a1acce65303f6688286160e9d2dc4329">
+        <dex dex="/Users/Tobias/Documents/LTH/Avancerad Interaktionsdesign/RBS-Android/app/build/intermediates/pre-dexed/debug/unity-classes-2fdf48f552bee921854e296164342bffdb3aa6f3.jar" />
     </item>
 
 </items>

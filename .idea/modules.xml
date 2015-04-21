@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/RealBombSquad.iml" filepath="$PROJECT_DIR$/RealBombSquad.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RBS-Android.iml" filepath="$PROJECT_DIR$/RBS-Android.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
