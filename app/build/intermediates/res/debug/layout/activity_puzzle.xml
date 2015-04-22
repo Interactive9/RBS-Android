@@ -7,7 +7,38 @@
     tools:context="com.Interactive9.RBS.puzzleActivity">
 
     <TextView android:text="ENTER PUZZLE HERE!" android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:id="@+id/textView" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <NumberPicker
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/numberPicker" />
+
+        <NumberPicker
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/numberPicker2" />
+
+        <NumberPicker
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/numberPicker3" />
+
+        <NumberPicker
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/numberPicker4" />
+    </LinearLayout>
 
 </RelativeLayout>
-<!-- From: file:/C:/Users/Tobias/Documents/GitHub/RBS-Android/app/src/main/res/layout/activity_puzzle.xml -->
+<!-- From: file:/C:/Users/Fabian%20Winquist/Documents/GitHub/RBS-Android/app/src/main/res/layout/activity_puzzle.xml -->
