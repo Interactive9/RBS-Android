@@ -2,25 +2,25 @@
 <items version="2" >
 
     <item
-        jar="C:\Users\Fabian Winquist\Desktop\test\RBS1\app\libs\unity-classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="572e54e8a1acce65303f6688286160e9d2dc4329">
-        <dex dex="C:\Users\Fabian Winquist\Desktop\test\RBS1\app\build\intermediates\pre-dexed\debug\unity-classes-b4d97f3435d37e7e96557818aa7c3d4554e635f3.jar" />
-    </item>
-    <item
-        jar="C:\Users\Fabian Winquist\Desktop\test\RBS1\app\libs\Vuforia.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="bccdae2108e5625f572836e25a2a785afa2f2e0f">
-        <dex dex="C:\Users\Fabian Winquist\Desktop\test\RBS1\app\build\intermediates\pre-dexed\debug\Vuforia-d8380959a963d1d484d739b4a55f1836309985ff.jar" />
-    </item>
-    <item
-        jar="C:\Users\Fabian Winquist\Desktop\test\RBS1\app\libs\QCARUnityPlayer.jar"
+        jar="C:\Users\Tobias\Documents\GitHub\RBS-Android\app\libs\QCARUnityPlayer.jar"
         jumboMode="false"
         revision="22.0.1"
         sha1="67c3736317eb057be70ac2395915d952cc3e77bd">
-        <dex dex="C:\Users\Fabian Winquist\Desktop\test\RBS1\app\build\intermediates\pre-dexed\debug\QCARUnityPlayer-94c2eaed1779e43b99b91f1840193d00e3aafc0f.jar" />
+        <dex dex="C:\Users\Tobias\Documents\GitHub\RBS-Android\app\build\intermediates\pre-dexed\debug\QCARUnityPlayer-aa09ed8d7fcb98c572e19ef65c349e44be71d6bc.jar" />
+    </item>
+    <item
+        jar="C:\Users\Tobias\Documents\GitHub\RBS-Android\app\libs\Vuforia.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="bccdae2108e5625f572836e25a2a785afa2f2e0f">
+        <dex dex="C:\Users\Tobias\Documents\GitHub\RBS-Android\app\build\intermediates\pre-dexed\debug\Vuforia-fafa571aa43eea3ffd51c1837d27e727698d5b42.jar" />
+    </item>
+    <item
+        jar="C:\Users\Tobias\Documents\GitHub\RBS-Android\app\libs\unity-classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="572e54e8a1acce65303f6688286160e9d2dc4329">
+        <dex dex="C:\Users\Tobias\Documents\GitHub\RBS-Android\app\build\intermediates\pre-dexed\debug\unity-classes-dc8095b51c48d50fb97ee045a1aa348cdb57d837.jar" />
     </item>
 
 </items>
