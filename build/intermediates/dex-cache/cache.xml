@@ -2,25 +2,25 @@
 <items version="2" >
 
     <item
-        jar="/Users/Tobias/Documents/LTH/Avancerad Interaktionsdesign/RBS-Android/app/libs/Vuforia.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="bccdae2108e5625f572836e25a2a785afa2f2e0f">
-        <dex dex="/Users/Tobias/Documents/LTH/Avancerad Interaktionsdesign/RBS-Android/app/build/intermediates/pre-dexed/debug/Vuforia-be83b2feb0a9895d9a611356eff13dc637ee51bf.jar" />
-    </item>
-    <item
-        jar="/Users/Tobias/Documents/LTH/Avancerad Interaktionsdesign/RBS-Android/app/libs/QCARUnityPlayer.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="67c3736317eb057be70ac2395915d952cc3e77bd">
-        <dex dex="/Users/Tobias/Documents/LTH/Avancerad Interaktionsdesign/RBS-Android/app/build/intermediates/pre-dexed/debug/QCARUnityPlayer-59276cfad87d869688583d8fc628a4f717dea02e.jar" />
-    </item>
-    <item
-        jar="/Users/Tobias/Documents/LTH/Avancerad Interaktionsdesign/RBS-Android/app/libs/unity-classes.jar"
+        jar="C:\Users\Fabian Winquist\Desktop\test\RBS1\app\libs\unity-classes.jar"
         jumboMode="false"
         revision="22.0.1"
         sha1="572e54e8a1acce65303f6688286160e9d2dc4329">
-        <dex dex="/Users/Tobias/Documents/LTH/Avancerad Interaktionsdesign/RBS-Android/app/build/intermediates/pre-dexed/debug/unity-classes-2fdf48f552bee921854e296164342bffdb3aa6f3.jar" />
+        <dex dex="C:\Users\Fabian Winquist\Desktop\test\RBS1\app\build\intermediates\pre-dexed\debug\unity-classes-b4d97f3435d37e7e96557818aa7c3d4554e635f3.jar" />
+    </item>
+    <item
+        jar="C:\Users\Fabian Winquist\Desktop\test\RBS1\app\libs\Vuforia.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="bccdae2108e5625f572836e25a2a785afa2f2e0f">
+        <dex dex="C:\Users\Fabian Winquist\Desktop\test\RBS1\app\build\intermediates\pre-dexed\debug\Vuforia-d8380959a963d1d484d739b4a55f1836309985ff.jar" />
+    </item>
+    <item
+        jar="C:\Users\Fabian Winquist\Desktop\test\RBS1\app\libs\QCARUnityPlayer.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="67c3736317eb057be70ac2395915d952cc3e77bd">
+        <dex dex="C:\Users\Fabian Winquist\Desktop\test\RBS1\app\build\intermediates\pre-dexed\debug\QCARUnityPlayer-94c2eaed1779e43b99b91f1840193d00e3aafc0f.jar" />
     </item>
 
 </items>

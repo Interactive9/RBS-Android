@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.Interactive9.RealBombSquad"
+    package="com.Interactive9.RBS"
     android:installLocation="preferExternal"
     android:theme="@android:style/Theme.NoTitleBar"
     android:versionCode="1"
@@ -61,11 +61,11 @@
         android:label="@string/app_name"
         android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
         <activity
-            android:name="com.Interactive9.RealBombSquad.UnityPlayerNativeActivity"
+            android:name="com.Interactive9.RBS.UnityPlayerNativeActivity"
             android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale"
             android:label="@string/app_name"
             android:launchMode="singleTask"
-            android:screenOrientation="portrait" >
+            android:screenOrientation="fullSensor" >
             <meta-data
                 android:name="unityplayer.UnityActivity"
                 android:value="true" />
@@ -89,7 +89,7 @@
             android:required="false" />
 
         <activity
-            android:name="com.Interactive9.RealBombSquad.MainActivity"
+            android:name="com.Interactive9.RBS.MainActivity"
             android:label="RealBombSquad" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -97,6 +97,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
                 <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name="com.Interactive9.RBS.puzzleActivity"
+            android:label="@string/title_activity_puzzle" >
         </activity>
     </application>
 

@@ -1,4 +1,6 @@
-_2, _WorldSpaceLightPos0.xyz), 0.0, 1.0)
+((tmpvar_5 + ((tmpvar_29.w * 16.0) * tmpvar_6)) * tmpvar_8)
+   * 
+    clamp (dot (tmpvar_2, _WorldSpaceLightPos0.xyz), 0.0, 1.0)
   ) + (
     (xlv_TEXCOORD5.xyz * tmpvar_10)
    * tmpvar_5)) + (tmpvar_15 * mix (tmpvar_6, vec3(
