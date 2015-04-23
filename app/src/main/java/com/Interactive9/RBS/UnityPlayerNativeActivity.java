@@ -5,6 +5,7 @@ import android.app.NativeActivity;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.graphics.PixelFormat;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.KeyEvent;
 import android.view.MotionEvent;
@@ -88,6 +89,11 @@ public class UnityPlayerNativeActivity extends NativeActivity
     public void Launch() {
         Intent intent = new Intent(this, puzzleActivity.class);
         startActivity(intent);
+        final MediaPlayer mp = MediaPlayer.create(this, R.raw.button_19);
+        mp.start();
+        overridePendingTransition(R.anim.activity_in, R.anim.activity_out);
+
+
     }
 	// Pass any events not handled by (unfocused) views straight to UnityPlayer
 	@Override public boolean onKeyUp(int keyCode, KeyEvent event)     { return mUnityPlayer.injectEvent(event); }

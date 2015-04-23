@@ -1,17 +1,63 @@
 package com.Interactive9.RBS;
 
 import android.app.Activity;
+import android.graphics.Color;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.NumberPicker;
 
 
 public class puzzleActivity extends Activity {
 
+    NumberPicker noPick1;
+    NumberPicker noPick2;
+    NumberPicker noPick3;
+    NumberPicker noPick4;
+    Button btn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_puzzle);
+
+        noPick1 = get_NP_by_Id(R.id.noPick1, Color.RED);
+        noPick2 = get_NP_by_Id(R.id.noPick2, Color.GREEN);
+        noPick3 = get_NP_by_Id(R.id.noPick3, Color.BLUE);
+        noPick4 = get_NP_by_Id(R.id.noPick4, Color.YELLOW);
+        btn = (Button)findViewById(R.id.button2);
+
+        final MediaPlayer btn_Click = MediaPlayer.create(this, R.raw.beep_24);
+        final MediaPlayer np_Click = MediaPlayer.create(this, R.raw.beep_21);
+        btn.setOnClickListener(new Button.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                btn_Click.start();
+            }
+        });
+
+        NumberPicker.OnValueChangeListener vcl = new NumberPicker.OnValueChangeListener() {
+            @Override
+            public void onValueChange(NumberPicker np, int oldVal, int newVal) {
+                np_Click.start();
+            }
+        };
+        noPick1.setOnValueChangedListener(vcl);
+        noPick2.setOnValueChangedListener(vcl);
+        noPick3.setOnValueChangedListener(vcl);
+        noPick4.setOnValueChangedListener(vcl);
+    }
+
+    private NumberPicker get_NP_by_Id(int np_id, int color){
+        NumberPicker np = (NumberPicker)findViewById(np_id);
+        np.setMaxValue(9);
+        np.setMinValue(0);
+        //np.setBackgroundColor(color);
+        np.setDescendantFocusability(NumberPicker.FOCUS_BLOCK_DESCENDANTS);
+        np.setWrapSelectorWheel(true);
+        return np;
     }
 
 

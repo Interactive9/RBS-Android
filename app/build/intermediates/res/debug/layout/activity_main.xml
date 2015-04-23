@@ -15,5 +15,17 @@
         android:layout_centerHorizontal="true"
         android:onClick="startBombing"/>
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Real Bomb Squad"
+        android:id="@+id/textView2"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#ffff0e0b"
+        android:textSize="44dp" />
+
 </RelativeLayout>
-<!-- From: file:/C:/Users/Fabian%20Winquist/Documents/GitHub/RBS-Android/app/src/main/res/layout/activity_main.xml -->
+<!-- From: file:/C:/Users/Lukas/Documents/GitHub/Interactive%209/app/src/main/res/layout/activity_main.xml -->
