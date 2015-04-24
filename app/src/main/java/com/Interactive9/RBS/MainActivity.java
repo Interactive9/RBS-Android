@@ -1,11 +1,16 @@
 package com.Interactive9.RBS;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+
+import java.io.IOException;
+import java.io.OutputStreamWriter;
 
 
 public class MainActivity extends Activity {
@@ -17,6 +22,7 @@ public class MainActivity extends Activity {
     }
     public void startBombing(View view)
     {
+        writeToFile("Test text");
         Intent intent = new Intent(this, UnityPlayerNativeActivity.class);
         startActivity(intent);
     }
@@ -41,5 +47,15 @@ public class MainActivity extends Activity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    private void writeToFile(String text) {
+        try {
+            OutputStreamWriter outputStreamWriter = new OutputStreamWriter(openFileOutput("test.txt", Context.MODE_PRIVATE));
+            outputStreamWriter.write(text);
+            outputStreamWriter.close();
+        } catch (IOException e) {
+            Log.e("Exception", "FileWriteFailed: " + e.toString());
+        }
     }
 }

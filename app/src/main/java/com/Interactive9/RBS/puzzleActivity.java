@@ -4,11 +4,19 @@ import android.app.Activity;
 import android.graphics.Color;
 import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.NumberPicker;
+import android.widget.TextView;
+
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 
 
 public class puzzleActivity extends Activity {
@@ -18,6 +26,7 @@ public class puzzleActivity extends Activity {
     NumberPicker noPick3;
     NumberPicker noPick4;
     Button btn;
+    TextView textView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,6 +44,8 @@ public class puzzleActivity extends Activity {
             @Override
             public void onClick(View v) {
                 btn_Click.start();
+                textView = (TextView)findViewById(R.id.textView);
+                textView.setText(readFromFile());
             }
         });
 
@@ -81,5 +92,30 @@ public class puzzleActivity extends Activity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    private String readFromFile() {
+        String retVal = "";
+        try {
+            InputStream inputStream = openFileInput("test.txt");
+            if (inputStream != null) {
+                InputStreamReader inputStreamReader = new InputStreamReader(inputStream);
+                BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
+                String text = "";
+                StringBuilder stringBuilder = new StringBuilder();
+
+                while ((text = bufferedReader.readLine()) != null) {
+                    stringBuilder.append(text);
+                }
+                inputStream.close();
+                retVal = stringBuilder.toString();
+            }
+        } catch (FileNotFoundException e) {
+            Log.e("Read error", "File not found: " + e.toString());
+        } catch (IOException e) {
+            Log.e("Read error", "Can not read file: " + e.toString());
+        }
+
+        return retVal;
     }
 }

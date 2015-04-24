@@ -84,6 +84,7 @@ public class UnityPlayerNativeActivity extends NativeActivity
     public void onBackPressed() {
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
+        finish();
     }
 
     public void Launch() {
