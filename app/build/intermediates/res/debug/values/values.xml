@@ -12,4 +12,5 @@
     <string name="input_disarm_combination">Go For It!</string>
     <string name="title_activity_main">MainActivity</string>
     <string name="title_activity_puzzle">puzzleActivity</string>
+    <string name="title_activity_select">SelectActivity</string>
 </resources>

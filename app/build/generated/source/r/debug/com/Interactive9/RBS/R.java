@@ -24,25 +24,34 @@ public final class R {
         public static final int bomb_combo=0x7f020002;
     }
     public static final class id {
-        public static final int action_settings=0x7f09000a;
-        public static final int button=0x7f090000;
-        public static final int button2=0x7f090005;
-        public static final int linearLayout=0x7f090004;
-        public static final int linearLayout1=0x7f090003;
-        public static final int noPick1=0x7f090006;
-        public static final int noPick2=0x7f090007;
-        public static final int noPick3=0x7f090008;
-        public static final int noPick4=0x7f090009;
-        public static final int textView=0x7f090002;
-        public static final int textView2=0x7f090001;
+        public static final int action_settings=0x7f090011;
+        public static final int button=0x7f090001;
+        public static final int button2=0x7f090007;
+        public static final int button3=0x7f090002;
+        public static final int button4=0x7f090003;
+        public static final int button5=0x7f09000d;
+        public static final int button6=0x7f09000f;
+        public static final int linearLayout=0x7f090006;
+        public static final int linearLayout1=0x7f090005;
+        public static final int noPick1=0x7f090008;
+        public static final int noPick2=0x7f090009;
+        public static final int noPick3=0x7f09000a;
+        public static final int noPick4=0x7f09000b;
+        public static final int textView=0x7f090004;
+        public static final int textView2=0x7f090000;
+        public static final int textView3=0x7f09000c;
+        public static final int textView4=0x7f090010;
+        public static final int textView5=0x7f09000e;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
         public static final int activity_puzzle=0x7f030001;
+        public static final int activity_select=0x7f030002;
     }
     public static final class menu {
         public static final int menu_main=0x7f080000;
         public static final int menu_puzzle=0x7f080001;
+        public static final int menu_select=0x7f080002;
     }
     public static final class raw {
         public static final int beep_21=0x7f050000;
@@ -60,5 +69,6 @@ public final class R {
         public static final int input_disarm_combination=0x7f070003;
         public static final int title_activity_main=0x7f070004;
         public static final int title_activity_puzzle=0x7f070005;
+        public static final int title_activity_select=0x7f070006;
     }
 }

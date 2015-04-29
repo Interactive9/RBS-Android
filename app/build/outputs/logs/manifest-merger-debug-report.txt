@@ -193,3 +193,9 @@ ADDED from AndroidManifest.xml:101:9
 		ADDED from AndroidManifest.xml:103:13
 	android:name
 		ADDED from AndroidManifest.xml:102:13
+activity#com.Interactive9.RBS.SelectActivity
+ADDED from AndroidManifest.xml:105:9
+	android:label
+		ADDED from AndroidManifest.xml:107:13
+	android:name
+		ADDED from AndroidManifest.xml:106:13

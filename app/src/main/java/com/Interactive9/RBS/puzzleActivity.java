@@ -38,27 +38,29 @@ public class puzzleActivity extends Activity {
         noPick4 = get_NP_by_Id(R.id.noPick4, Color.YELLOW);
         btn = (Button)findViewById(R.id.button2);
 
-        final MediaPlayer btn_Click = MediaPlayer.create(this, R.raw.beep_24);
+      final MediaPlayer btn_Click = MediaPlayer.create(this, R.raw.beep_24);
         final MediaPlayer np_Click = MediaPlayer.create(this, R.raw.beep_21);
         btn.setOnClickListener(new Button.OnClickListener() {
             @Override
             public void onClick(View v) {
-                btn_Click.start();
+               // btn_Click.start();
                 textView = (TextView)findViewById(R.id.textView);
                 textView.setText(readFromFile());
             }
         });
-
+        /* Extra ljud överflödigt?
         NumberPicker.OnValueChangeListener vcl = new NumberPicker.OnValueChangeListener() {
             @Override
             public void onValueChange(NumberPicker np, int oldVal, int newVal) {
                 np_Click.start();
             }
         };
+
         noPick1.setOnValueChangedListener(vcl);
         noPick2.setOnValueChangedListener(vcl);
         noPick3.setOnValueChangedListener(vcl);
         noPick4.setOnValueChangedListener(vcl);
+        */
     }
 
     private NumberPicker get_NP_by_Id(int np_id, int color){

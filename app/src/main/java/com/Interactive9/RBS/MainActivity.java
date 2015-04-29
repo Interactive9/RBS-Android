@@ -1,7 +1,9 @@
 package com.Interactive9.RBS;
 
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -20,11 +22,27 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
-    public void startBombing(View view)
+
+    public void play(View view)
     {
         writeToFile("Test text");
-        Intent intent = new Intent(this, UnityPlayerNativeActivity.class);
+        Intent intent = new Intent(this, SelectActivity.class);
         startActivity(intent);
+    }
+
+    public void activityNotImplemented(View view)
+    {
+        new AlertDialog.Builder(MainActivity.this)
+                .setTitle("Sorry")
+                .setMessage("This activity is not implemented yet.")
+                .setCancelable(false)
+                .setNeutralButton(android.R.string.ok, new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                        dialog.cancel();
+                    }
+                })
+                .setIcon(android.R.drawable.ic_dialog_alert)
+                .show();
     }
 
     @Override
@@ -58,4 +76,5 @@ public class MainActivity extends Activity {
             Log.e("Exception", "FileWriteFailed: " + e.toString());
         }
     }
+
 }
