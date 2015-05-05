@@ -102,13 +102,12 @@
     <Button
         android:layout_width="200dp"
         android:layout_height="100dp"
-        android:text="@string/input_disarm_combination"
+        android:text="Go For It!"
         android:textSize="40dp"
         android:id="@+id/button2"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="71dp" />
 
-
 </RelativeLayout>
-<!-- From: file:/C:/Users/Tobias/Documents/GitHub/RBS-Android/app/src/main/res/layout/activity_puzzle.xml -->
+<!-- From: file:/C:/Users/Fabian%20Winquist/Desktop/RBS-Test/app/src/main/res/layout/activity_puzzle.xml -->

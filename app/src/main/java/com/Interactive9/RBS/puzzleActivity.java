@@ -38,12 +38,12 @@ public class puzzleActivity extends Activity {
         noPick4 = get_NP_by_Id(R.id.noPick4, Color.YELLOW);
         btn = (Button)findViewById(R.id.button2);
 
-      final MediaPlayer btn_Click = MediaPlayer.create(this, R.raw.beep_24);
+        final MediaPlayer btn_Click = MediaPlayer.create(this, R.raw.beep_24);
         final MediaPlayer np_Click = MediaPlayer.create(this, R.raw.beep_21);
         btn.setOnClickListener(new Button.OnClickListener() {
             @Override
             public void onClick(View v) {
-               // btn_Click.start();
+                // btn_Click.start();
                 textView = (TextView)findViewById(R.id.textView);
                 textView.setText(readFromFile());
             }
