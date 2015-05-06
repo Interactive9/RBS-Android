@@ -10,7 +10,7 @@ import android.view.MenuItem;
 import android.view.View;
 
 
-public class SelectActivity extends Activity {
+public class SelectActivity extends MainActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,7 +18,11 @@ public class SelectActivity extends Activity {
         setContentView(R.layout.activity_select);
     }
 
-
+    public void onBackPressed() {
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+        finish();
+    }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
