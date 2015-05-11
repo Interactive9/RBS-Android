@@ -46,7 +46,7 @@ public class SelectActivity extends MainActivity {
     }
 
     public void disarm(View view) {
-        Intent intent = new Intent(this, UnityPlayerNativeActivity.class);
+        Intent intent = new Intent(this, FindBombActivity.class);
         startActivity(intent);
     }
 

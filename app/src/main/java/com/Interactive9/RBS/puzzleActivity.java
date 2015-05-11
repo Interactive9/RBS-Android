@@ -1,9 +1,11 @@
 package com.Interactive9.RBS;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.graphics.Color;
 import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.os.Environment;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -13,42 +15,38 @@ import android.widget.NumberPicker;
 import android.widget.TextView;
 
 import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 
 
-public class puzzleActivity extends Activity {
+public class puzzleActivity extends MainActivity {
 
-    NumberPicker noPick1;
-    NumberPicker noPick2;
-    NumberPicker noPick3;
-    NumberPicker noPick4;
+    NumberPicker noPickR;
+    NumberPicker noPickG;
+    NumberPicker noPickB;
+    NumberPicker noPickY;
     Button btn;
     TextView textView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_puzzle);
+        setContentView(R.layout.activity_puzzle2);
 
-        noPick1 = get_NP_by_Id(R.id.noPick1, Color.RED);
-        noPick2 = get_NP_by_Id(R.id.noPick2, Color.GREEN);
-        noPick3 = get_NP_by_Id(R.id.noPick3, Color.BLUE);
-        noPick4 = get_NP_by_Id(R.id.noPick4, Color.YELLOW);
+        noPickR = get_NP_by_Id(R.id.noPick1, Color.RED);
+        noPickG = get_NP_by_Id(R.id.noPick2, Color.GREEN);
+        noPickB = get_NP_by_Id(R.id.noPick3, Color.BLUE);
+        noPickY = get_NP_by_Id(R.id.noPick4, Color.YELLOW);
         btn = (Button)findViewById(R.id.button2);
+        textView = (TextView)findViewById(R.id.textView);
 
         final MediaPlayer btn_Click = MediaPlayer.create(this, R.raw.beep_24);
         final MediaPlayer np_Click = MediaPlayer.create(this, R.raw.beep_21);
-        btn.setOnClickListener(new Button.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // btn_Click.start();
-                textView = (TextView)findViewById(R.id.textView);
-                textView.setText(readFromFile());
-            }
-        });
-        /* Extra ljud överflödigt?
+
+        /* Extra ljud överflödigt? Bara om man har touch ljud är på*/
         NumberPicker.OnValueChangeListener vcl = new NumberPicker.OnValueChangeListener() {
             @Override
             public void onValueChange(NumberPicker np, int oldVal, int newVal) {
@@ -56,11 +54,13 @@ public class puzzleActivity extends Activity {
             }
         };
 
-        noPick1.setOnValueChangedListener(vcl);
-        noPick2.setOnValueChangedListener(vcl);
-        noPick3.setOnValueChangedListener(vcl);
-        noPick4.setOnValueChangedListener(vcl);
-        */
+        noPickR.setOnValueChangedListener(vcl);
+        noPickG.setOnValueChangedListener(vcl);
+        noPickB.setOnValueChangedListener(vcl);
+        noPickY.setOnValueChangedListener(vcl);
+
+
+
     }
 
     private NumberPicker get_NP_by_Id(int np_id, int color){
@@ -96,28 +96,47 @@ public class puzzleActivity extends Activity {
         return super.onOptionsItemSelected(item);
     }
 
-    private String readFromFile() {
-        String retVal = "";
+    public String readFromFile() {
+        File file = new File(Environment.getExternalStorageDirectory(), "/Android/data/com.Interactive9.RBS/files/Code.txt");
+        String ret = "";
+
         try {
-            InputStream inputStream = openFileInput("test.txt");
-            if (inputStream != null) {
-                InputStreamReader inputStreamReader = new InputStreamReader(inputStream);
-                BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
-                String text = "";
+            FileInputStream inputStream = new FileInputStream(file);
+
+            if ( inputStream != null ) {
+
+                BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream));
+                String receiveString = "";
                 StringBuilder stringBuilder = new StringBuilder();
 
-                while ((text = bufferedReader.readLine()) != null) {
-                    stringBuilder.append(text);
+                while ( (receiveString = bufferedReader.readLine()) != null ) {
+                    stringBuilder.append(receiveString);
                 }
+
                 inputStream.close();
-                retVal = stringBuilder.toString();
+                ret = stringBuilder.toString();
             }
-        } catch (FileNotFoundException e) {
-            Log.e("Read error", "File not found: " + e.toString());
+        }
+        catch (FileNotFoundException e) {
+            Log.e("login activity", "File not found: " + e.toString());
         } catch (IOException e) {
-            Log.e("Read error", "Can not read file: " + e.toString());
+            Log.e("login activity", "Can not read file: " + e.toString());
         }
 
-        return retVal;
+        return ret;
+    }
+
+    public void GameOver(View view){
+        String code = "R" + noPickR.getValue()+ " G"+ noPickG.getValue()+  " B"+ noPickB.getValue() + " Y" + noPickY.getValue();
+        String RealCode = readFromFile();
+        String disarmed = "KABOOM!!!";
+        if(code.equals(RealCode)){
+            disarmed = "Bomb as been disarmed";
+        }else{
+            Intent intent = new Intent(this, GameOver.class);
+            startActivity(intent);
+        }
+        textView.setText(disarmed);
+
     }
 }

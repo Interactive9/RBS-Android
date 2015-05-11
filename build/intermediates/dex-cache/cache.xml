@@ -2,25 +2,25 @@
 <items version="2" >
 
     <item
-        jar="C:\Users\Fabian Winquist\Documents\GitHub\RBS-Android\app\libs\QCARUnityPlayer.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="67c3736317eb057be70ac2395915d952cc3e77bd">
-        <dex dex="C:\Users\Fabian Winquist\Documents\GitHub\RBS-Android\app\build\intermediates\pre-dexed\debug\QCARUnityPlayer-ae87066ab4468edfc2891aecc6c7a8633bdb9e4f.jar" />
-    </item>
-    <item
-        jar="C:\Users\Fabian Winquist\Documents\GitHub\RBS-Android\app\libs\unity-classes.jar"
+        jar="C:\Users\Fabian Winquist\Desktop\RBS\app\libs\unity-classes.jar"
         jumboMode="false"
         revision="22.0.1"
         sha1="572e54e8a1acce65303f6688286160e9d2dc4329">
-        <dex dex="C:\Users\Fabian Winquist\Documents\GitHub\RBS-Android\app\build\intermediates\pre-dexed\debug\unity-classes-fded80e07c487da8f5cf8168fcbe36c8d7366823.jar" />
+        <dex dex="C:\Users\Fabian Winquist\Desktop\RBS\app\build\intermediates\pre-dexed\debug\unity-classes-b29c9ab85eb5584b28d97277b9040a6a991f1582.jar" />
     </item>
     <item
-        jar="C:\Users\Fabian Winquist\Documents\GitHub\RBS-Android\app\libs\Vuforia.jar"
+        jar="C:\Users\Fabian Winquist\Desktop\RBS\app\libs\QCARUnityPlayer.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="67c3736317eb057be70ac2395915d952cc3e77bd">
+        <dex dex="C:\Users\Fabian Winquist\Desktop\RBS\app\build\intermediates\pre-dexed\debug\QCARUnityPlayer-8d1a060b7f6181eebb0c8fe34b28adf06b2c7ad3.jar" />
+    </item>
+    <item
+        jar="C:\Users\Fabian Winquist\Desktop\RBS\app\libs\Vuforia.jar"
         jumboMode="false"
         revision="22.0.1"
         sha1="bccdae2108e5625f572836e25a2a785afa2f2e0f">
-        <dex dex="C:\Users\Fabian Winquist\Documents\GitHub\RBS-Android\app\build\intermediates\pre-dexed\debug\Vuforia-b06cb69d75b38998591c4c47df7e351cfcb17cda.jar" />
+        <dex dex="C:\Users\Fabian Winquist\Desktop\RBS\app\build\intermediates\pre-dexed\debug\Vuforia-6e4365634d867776776fac8a12558270b81136cf.jar" />
     </item>
 
 </items>

@@ -8,7 +8,7 @@
     android:background="@drawable/bomb_combo">
 
 
-    <TextView android:text="ENTER PUZZLE HERE!" android:layout_width="wrap_content"
+    <TextView android:text="Enter disarm code!" android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
         android:id="@+id/textView"
@@ -105,6 +105,7 @@
         android:text="Go For It!"
         android:textSize="40dp"
         android:id="@+id/button2"
+        android:onClick="GameOver"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="71dp" />
