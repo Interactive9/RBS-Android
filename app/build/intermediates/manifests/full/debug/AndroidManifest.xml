@@ -110,6 +110,10 @@
             android:name="com.Interactive9.RBS.FindBombActivity"
             android:label="@string/title_activity_find_bomb" >
         </activity>
+        <activity
+            android:name="com.Interactive9.RBS.PlantBomb"
+            android:label="@string/title_activity_plant_bomb" >
+        </activity>
     </application>
 
 </manifest> <!-- android:installLocation="preferExternal" -->

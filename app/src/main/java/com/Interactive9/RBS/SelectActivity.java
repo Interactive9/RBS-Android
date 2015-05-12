@@ -54,6 +54,10 @@ public class SelectActivity extends MainActivity {
     }
 
     public void plant(View view) {
+        Intent intent = new Intent(this, PlantBomb.class);
+        final MediaPlayer mp = MediaPlayer.create(this, R.raw.button_19);
+        mp.start();
+        startActivity(intent);
 
     }
 

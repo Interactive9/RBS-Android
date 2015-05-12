@@ -9,4 +9,5 @@
     <string name="title_activity_find_bomb">FindBombActivity</string>
     <string name="title_activity_puzzle">puzzleActivity</string>
     <string name="title_activity_game_over">GameOver</string>
+    <string name="title_activity_plant_bomb">PlantBomb</string>
 </resources>

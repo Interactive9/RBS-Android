@@ -207,3 +207,9 @@ ADDED from AndroidManifest.xml:109:9
 		ADDED from AndroidManifest.xml:111:13
 	android:name
 		ADDED from AndroidManifest.xml:110:13
+activity#com.Interactive9.RBS.PlantBomb
+ADDED from AndroidManifest.xml:113:9
+	android:label
+		ADDED from AndroidManifest.xml:115:13
+	android:name
+		ADDED from AndroidManifest.xml:114:13

@@ -30,11 +30,12 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
     }
 
     public void play(View view)
     {
-        String path = writeToFile("R1 G2 B3 Y4");
+        //String path = writeToFile("R1 G2 B3 Y4");
         Intent intent = new Intent(this, SelectActivity.class);
         final MediaPlayer mp = MediaPlayer.create(this, R.raw.button_19);
         mp.start();
@@ -43,6 +44,8 @@ public class MainActivity extends Activity {
 
     public void activityNotImplemented(View view)
     {
+
+
         String message = "This function(s) has not been implemented yet";
         new AlertDialog.Builder(MainActivity.this)
                 .setTitle("Sorry")
