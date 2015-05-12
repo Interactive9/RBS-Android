@@ -82,9 +82,9 @@ public class UnityPlayerNativeActivity extends NativeActivity
         return super.dispatchKeyEvent(event);
     }
     public void onBackPressed() {
-        Intent intent = new Intent(this, SelectActivity.class);
+        Intent intent = new Intent(this, FindBombActivity.class);
         startActivity(intent);
-        //finish();
+        finish();
     }
 
     public void Launch() {

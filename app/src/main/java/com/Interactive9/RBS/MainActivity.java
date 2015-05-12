@@ -5,6 +5,7 @@ import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Environment;
 import android.util.Log;
@@ -35,6 +36,8 @@ public class MainActivity extends Activity {
     {
         String path = writeToFile("R1 G2 B3 Y4");
         Intent intent = new Intent(this, SelectActivity.class);
+        final MediaPlayer mp = MediaPlayer.create(this, R.raw.button_19);
+        mp.start();
         startActivity(intent);
     }
 

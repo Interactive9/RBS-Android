@@ -2,6 +2,7 @@ package com.Interactive9.RBS;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -42,11 +43,14 @@ public class FindBombActivity extends Activity {
     public void Unity(View view)
     {
         Intent intent = new Intent(this, UnityPlayerNativeActivity.class);
+        final MediaPlayer mp = MediaPlayer.create(this, R.raw.button_19);
+        mp.start();
         startActivity(intent);
     }
 
     public void onBackPressed() {
         Intent intent = new Intent(this, SelectActivity.class);
         startActivity(intent);
+        finish();
     }
 }

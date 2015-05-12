@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -47,6 +48,8 @@ public class SelectActivity extends MainActivity {
 
     public void disarm(View view) {
         Intent intent = new Intent(this, FindBombActivity.class);
+        final MediaPlayer mp = MediaPlayer.create(this, R.raw.button_19);
+        mp.start();
         startActivity(intent);
     }
 

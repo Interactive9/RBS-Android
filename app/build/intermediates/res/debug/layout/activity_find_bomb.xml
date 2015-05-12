@@ -46,13 +46,16 @@
 
     <Button
         android:layout_width="200dp"
-        android:layout_height="100dp"
-        android:text="Found it!"
+        android:layout_height="60dp"
+        android:text="To Scanner >"
         android:textSize="40dp"
         android:id="@+id/button23"
         android:onClick="Unity"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignRight="@+id/textView2"
+        android:layout_alignEnd="@+id/textView2"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_alignParentBottom="true" />
 
     <EditText
         android:layout_width="wrap_content"

@@ -34,7 +34,7 @@ public class puzzleActivity extends MainActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_puzzle2);
+        setContentView(R.layout.activity_puzzle);
 
         noPickR = get_NP_by_Id(R.id.noPick1, Color.RED);
         noPickG = get_NP_by_Id(R.id.noPick2, Color.GREEN);
