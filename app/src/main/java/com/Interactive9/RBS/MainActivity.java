@@ -140,7 +140,7 @@ public class MainActivity extends Activity {
     }
 
     public void onBackPressed() {
-        finish();
+        this.finish();
         System.exit(0);
     }
 

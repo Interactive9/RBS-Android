@@ -23,22 +23,21 @@ public final class R {
         public static final int app_icon=0x7f020001;
         public static final int bomb_combo=0x7f020002;
         public static final int explosion=0x7f020003;
-        public static final int rbs_background=0x7f020004;
-        public static final int rbs_bg=0x7f020005;
-        public static final int rbs_box=0x7f020006;
-        public static final int smallbomb=0x7f020007;
-        public static final int thebomb=0x7f020008;
+        public static final int rbs_bg=0x7f020004;
+        public static final int rbs_box=0x7f020005;
+        public static final int smallbomb=0x7f020006;
+        public static final int thebomb=0x7f020007;
     }
     public static final class id {
         public static final int action_settings=0x7f090016;
         public static final int button=0x7f090008;
         public static final int button2=0x7f090007;
-        public static final int button23=0x7f090003;
+        public static final int button23=0x7f090001;
         public static final int button3=0x7f090009;
         public static final int button4=0x7f09000a;
         public static final int button5=0x7f090012;
         public static final int button6=0x7f090014;
-        public static final int imageView=0x7f090001;
+        public static final int imageView=0x7f090005;
         public static final int imageView2=0x7f090002;
         public static final int linearLayout=0x7f09000c;
         public static final int linearLayout1=0x7f09000b;
@@ -51,14 +50,14 @@ public final class R {
         public static final int textView3=0x7f090011;
         public static final int textView4=0x7f090015;
         public static final int textView5=0x7f090013;
-        public static final int textView6=0x7f090004;
-        public static final int textView7=0x7f090005;
+        public static final int textView6=0x7f090003;
+        public static final int textView7=0x7f090004;
     }
     public static final class layout {
         public static final int activity_find_bomb=0x7f030000;
         public static final int activity_game_over=0x7f030001;
         public static final int activity_main=0x7f030002;
-        public static final int activity_plant_bomb2=0x7f030003;
+        public static final int activity_plant_bomb=0x7f030003;
         public static final int activity_puzzle=0x7f030004;
         public static final int activity_select=0x7f030005;
     }

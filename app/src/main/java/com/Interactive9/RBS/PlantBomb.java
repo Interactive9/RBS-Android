@@ -26,7 +26,7 @@ public class PlantBomb extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_plant_bomb2);
+        setContentView(R.layout.activity_plant_bomb);
         noPickR = get_NP_by_Id(R.id.noPick1, Color.RED);
         noPickG = get_NP_by_Id(R.id.noPick2, Color.GREEN);
         noPickB = get_NP_by_Id(R.id.noPick3, Color.BLUE);
@@ -70,7 +70,7 @@ public class PlantBomb extends Activity {
     }
     private NumberPicker get_NP_by_Id(int np_id, int color){
         NumberPicker np = (NumberPicker)findViewById(np_id);
-        np.setMaxValue(4);
+        np.setMaxValue(9);
         np.setMinValue(1);
         //np.setBackgroundColor(color);
         np.setDescendantFocusability(NumberPicker.FOCUS_BLOCK_DESCENDANTS);
@@ -94,26 +94,26 @@ public class PlantBomb extends Activity {
 
     }
 
-     public void plant(View view){
-         StringBuilder stringBuilder = new StringBuilder("R" + noPickR.getValue());
-         stringBuilder.append(" G" + noPickG.getValue());
-         stringBuilder.append(" B" + noPickB.getValue());
-         stringBuilder.append(" Y" + noPickY.getValue());
-         writeToFile(stringBuilder.toString());
+    public void plant(View view){
+        StringBuilder stringBuilder = new StringBuilder("R" + noPickR.getValue());
+        stringBuilder.append(" G" + noPickG.getValue());
+        stringBuilder.append(" B" + noPickB.getValue());
+        stringBuilder.append(" Y" + noPickY.getValue());
+        writeToFile(stringBuilder.toString());
 
-         String message = "Bomb has been successfully planted";
-         new AlertDialog.Builder(PlantBomb.this)
-                 .setTitle("Bomb planted")
-                 .setMessage(message)
-                 .setCancelable(false)
-                 .setNeutralButton(android.R.string.ok, new DialogInterface.OnClickListener() {
-                     public void onClick(DialogInterface dialog, int id) {
-                         dialog.cancel();
-                         planted();
-                       }
-                 })
-                 .setIcon(android.R.drawable.ic_dialog_alert)
-                 .show();
+        String message = "Bomb has been successfully planted";
+        new AlertDialog.Builder(PlantBomb.this)
+                .setTitle("Bomb planted")
+                .setMessage(message)
+                .setCancelable(false)
+                .setNeutralButton(android.R.string.ok, new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                        dialog.cancel();
+                        planted();
+                    }
+                })
+                .setIcon(android.R.drawable.ic_dialog_alert)
+                .show();
 
     }
     private void planted(){

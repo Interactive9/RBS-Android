@@ -19,14 +19,6 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/imageView"
-        android:background="@drawable/smallbomb"
-        android:layout_below="@+id/imageView2"
-        android:layout_centerHorizontal="true" />
-
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -39,39 +31,49 @@
         android:layout_centerHorizontal="true" />
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
         android:id="@+id/imageView2"
         android:src="@drawable/rbs_box"
-        android:layout_below="@+id/textView2"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Picked up a bomb in the area, look for the poster shown below"
         android:id="@+id/textView6"
-        android:layout_marginTop="40dp"
         android:textSize="20sp"
         android:width="280sp"
-        android:textColor="#ff0f5300"
-        android:layout_alignTop="@+id/imageView2"
-        android:layout_centerHorizontal="true" />
+        android:textColor="#ff10a000"
+        android:layout_below="@+id/textView2"
+        android:layout_alignRight="@+id/textView2"
+        android:layout_alignEnd="@+id/textView2"
+        android:layout_marginTop="35dp" />/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Time to detonation 0:10"
         android:id="@+id/textView7"
-        android:layout_marginBottom="40dp"
-        android:textColor="#ff740200"
+        android:textColor="#ffbd0200"
         android:width="280sp"
         android:textSize="20sp"
-        android:layout_alignBottom="@+id/imageView2"
-        android:layout_alignLeft="@+id/textView6"
-        android:layout_alignStart="@+id/textView6" />
+        android:layout_below="@+id/textView6"
+        android:layout_alignRight="@+id/textView2"
+        android:layout_alignEnd="@+id/textView2" />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:id="@+id/imageView"
+        android:background="@drawable/thebomb"
+        android:layout_below="@+id/textView6"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="110dp" />
 
 
 </RelativeLayout>
-<!-- From: file:/C:/Users/Tobias/Documents/GitHub/RBS-Android/app/src/main/res/layout/activity_find_bomb.xml -->
+<!-- From: file:/C:/Users/Fabian%20Winquist/Desktop/RBS/app/src/main/res/layout/activity_find_bomb.xml -->

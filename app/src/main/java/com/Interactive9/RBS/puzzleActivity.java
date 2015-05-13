@@ -1,6 +1,8 @@
 package com.Interactive9.RBS;
 
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Color;
 import android.media.MediaPlayer;
@@ -23,7 +25,7 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 
 
-public class puzzleActivity extends MainActivity {
+public class puzzleActivity extends Activity {
 
     NumberPicker noPickR;
     NumberPicker noPickG;
@@ -132,6 +134,7 @@ public class puzzleActivity extends MainActivity {
         String disarmed = "KABOOM!!!";
         if(code.equals(RealCode)){
             disarmed = "Bomb as been disarmed";
+            StartOver();
         }else{
             Intent intent = new Intent(this, GameOver.class);
             startActivity(intent);
@@ -139,4 +142,27 @@ public class puzzleActivity extends MainActivity {
         textView.setText(disarmed);
 
     }
+
+    public void StartOver(){
+        String message = "Bomb has been successfully disarmed";
+        new AlertDialog.Builder(puzzleActivity.this)
+                .setTitle("Bomb disarmed")
+                .setMessage(message)
+                .setCancelable(false)
+                .setNeutralButton(android.R.string.ok, new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                        dialog.cancel();
+                        planted();
+                    }
+                })
+                .setIcon(android.R.drawable.ic_dialog_alert)
+                .show();
+
+    }
+    private void planted(){
+        Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        startActivity(intent);
+    }
 }
+
