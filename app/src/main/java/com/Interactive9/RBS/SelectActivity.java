@@ -54,25 +54,10 @@ public class SelectActivity extends MainActivity {
     }
 
     public void plant(View view) {
-        Intent intent = new Intent(this, PlantBomb.class);
+        Intent intent = new Intent(this, BombGuide.class);
         final MediaPlayer mp = MediaPlayer.create(this, R.raw.button_19);
         mp.start();
         startActivity(intent);
 
-    }
-
-    public void activityNotImplemented(View view)
-    {
-        new AlertDialog.Builder(SelectActivity.this)
-                .setTitle("Sorry")
-                .setMessage("This activity is not implemented yet.")
-                .setCancelable(false)
-                .setNeutralButton(android.R.string.ok, new DialogInterface.OnClickListener() {
-                    public void onClick(DialogInterface dialog, int id) {
-                        dialog.cancel();
-                    }
-                })
-                .setIcon(android.R.drawable.ic_dialog_alert)
-                .show();
     }
 }

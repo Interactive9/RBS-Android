@@ -117,6 +117,10 @@ public class PlantBomb extends Activity {
 
     }
     private void planted(){
-        this.finish();
+        Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        final MediaPlayer mp = MediaPlayer.create(this, R.raw.button_19);
+        mp.start();
+        startActivity(intent);
     }
 }

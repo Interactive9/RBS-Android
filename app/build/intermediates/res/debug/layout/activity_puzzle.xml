@@ -10,7 +10,7 @@
 
     <TextView android:text="Enter disarm code" android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
+        android:layout_marginTop="40dp"
         android:id="@+id/textView"
         android:textSize="30dp"
         android:layout_alignParentTop="true"
@@ -110,5 +110,14 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true" />
 
+    <TextView android:text="Enter disarm code" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:id="@+id/textView5677"
+        android:textSize="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ff0eff22" />
+
 </RelativeLayout>
-<!-- From: file:/C:/Users/Fabian%20Winquist/Desktop/RBS/app/src/main/res/layout/activity_puzzle.xml -->
+<!-- From: file:/C:/Users/Fabian%20Winquist/Documents/GitHub/RBS-Android/app/src/main/res/layout/activity_puzzle.xml -->

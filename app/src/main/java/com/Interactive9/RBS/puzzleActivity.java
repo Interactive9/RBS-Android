@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.os.CountDownTimer;
 import android.os.Environment;
 import android.util.Log;
 import android.view.Menu;
@@ -23,6 +24,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.util.concurrent.TimeUnit;
 
 
 public class puzzleActivity extends Activity {
@@ -33,6 +35,7 @@ public class puzzleActivity extends Activity {
     NumberPicker noPickY;
     Button btn;
     TextView textView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -45,8 +48,10 @@ public class puzzleActivity extends Activity {
         btn = (Button)findViewById(R.id.button2);
         textView = (TextView)findViewById(R.id.textView);
 
-        final MediaPlayer btn_Click = MediaPlayer.create(this, R.raw.beep_24);
+        final MediaPlayer btn_Click = MediaPlayer.create(this, R.raw.bombbeep);
         final MediaPlayer np_Click = MediaPlayer.create(this, R.raw.beep_21);
+
+     
 
         /* Extra ljud överflödigt? Bara om man har touch ljud är på*/
         NumberPicker.OnValueChangeListener vcl = new NumberPicker.OnValueChangeListener() {
@@ -61,14 +66,21 @@ public class puzzleActivity extends Activity {
         noPickB.setOnValueChangedListener(vcl);
         noPickY.setOnValueChangedListener(vcl);
 
+        CountDownTimer timer = new CounterClass(30000,1000);
+        timer.start();
+
+    }
 
 
+    private void Over(){
+        Intent intent = new Intent(this, GameOver.class);
+        startActivity(intent);
     }
 
     private NumberPicker get_NP_by_Id(int np_id, int color){
         NumberPicker np = (NumberPicker)findViewById(np_id);
         np.setMaxValue(9);
-        np.setMinValue(0);
+        np.setMinValue(1);
         //np.setBackgroundColor(color);
         np.setDescendantFocusability(NumberPicker.FOCUS_BLOCK_DESCENDANTS);
         np.setWrapSelectorWheel(true);
@@ -136,8 +148,7 @@ public class puzzleActivity extends Activity {
             disarmed = "Bomb as been disarmed";
             StartOver();
         }else{
-            Intent intent = new Intent(this, GameOver.class);
-            startActivity(intent);
+            Over();
         }
         textView.setText(disarmed);
 
@@ -152,17 +163,41 @@ public class puzzleActivity extends Activity {
                 .setNeutralButton(android.R.string.ok, new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int id) {
                         dialog.cancel();
-                        planted();
+                        disarmed();
                     }
                 })
                 .setIcon(android.R.drawable.ic_dialog_alert)
                 .show();
 
     }
-    private void planted(){
+    private void disarmed(){
         Intent intent = new Intent(getApplicationContext(), MainActivity.class);
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(intent);
     }
+
+    public class CounterClass extends CountDownTimer {
+        public CounterClass (long millisInFuture, long countDownInterval){
+            super(millisInFuture,countDownInterval);
+
+        }
+
+        @Override
+        public void onTick(long millisUntilFinished) {
+            long millis = millisUntilFinished;
+            String ms = String.format("%02d:%02d", TimeUnit.MILLISECONDS.toMinutes(millis),
+                    TimeUnit.MILLISECONDS.toSeconds(millis) - TimeUnit.MINUTES.toSeconds(TimeUnit.MILLISECONDS.toMinutes(millis)));
+            System.out.println(ms);
+            textView.setText(ms);
+            textView.setTextColor(Color.RED);
+
+        }
+
+        @Override
+        public void onFinish() {
+            Over();
+        }
+    }
+
 }
 

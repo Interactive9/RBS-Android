@@ -88,7 +88,7 @@ public class UnityPlayerNativeActivity extends NativeActivity
     }
 
     public void Launch() {
-        Intent intent = new Intent(this, puzzleActivity.class);
+       Intent intent = new Intent(this, puzzleActivity.class);
         startActivity(intent);
         final MediaPlayer mp = MediaPlayer.create(this, R.raw.button_19);
         mp.start();

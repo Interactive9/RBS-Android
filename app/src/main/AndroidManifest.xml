@@ -23,6 +23,7 @@
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
     <uses-feature android:glEsVersion="0x00020000" />
 
     <uses-permission android:name="android.permission.VIBRATE" />
@@ -48,6 +49,8 @@
 
     <uses-permission android:name="android.permission.WAKE_LOCK" />
 
+    <android:uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
     <application
         android:banner="@drawable/app_banner"
         android:debuggable="false"
@@ -61,8 +64,6 @@
             android:label="@string/app_name"
             android:launchMode="singleTask"
             android:screenOrientation="fullSensor" >
-
-
             <meta-data
                 android:name="unityplayer.UnityActivity"
                 android:value="true" />
@@ -77,9 +78,9 @@
             android:screenOrientation="portrait" >
         </activity>
         <!--
-            To support devices using the TI S3D library for stereo mode we must 
+            To support devices using the TI S3D library for stereo mode we must
             add the following library.
-            Devices that require this are: ODG X6 
+            Devices that require this are: ODG X6
         -->
         <uses-library
             android:name="com.ti.s3d"
@@ -100,16 +101,20 @@
             android:label="@string/title_activity_select" >
         </activity>
         <activity
-            android:name=".PlantBomb"
-            android:label="@string/title_activity_plant_bomb" >
-        </activity>
-        <activity
             android:name=".FindBombActivity"
             android:label="@string/title_activity_find_bomb" >
         </activity>
         <activity
+            android:name=".BombGuide"
+            android:label="@string/title_activity_bomb_guide" >
+        </activity>
+        <activity
             android:name=".puzzleActivity"
             android:label="@string/title_activity_puzzle" >
+        </activity>
+        <activity
+            android:name=".PlantBomb"
+            android:label="@string/title_activity_plant_bomb" >
         </activity>
         <activity
             android:name=".GameOver"
