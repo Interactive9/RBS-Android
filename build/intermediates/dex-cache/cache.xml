@@ -2,46 +2,25 @@
 <items version="2" >
 
     <item
-        jar="C:\Users\Fabian Winquist\Desktop\RBS1\app\libs\unity-classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="572e54e8a1acce65303f6688286160e9d2dc4329">
-        <dex dex="C:\Users\Fabian Winquist\Desktop\RBS1\app\build\intermediates\pre-dexed\debug\unity-classes-b4eab228f4e969131db3e652bb24284f1375d3bc.jar" />
-    </item>
-    <item
-        jar="C:\Users\Fabian Winquist\Documents\GitHub\RBS-Android\app\libs\QCARUnityPlayer.jar"
+        jar="C:\Users\Tobias\Documents\GitHub\RBS-Android\app\libs\QCARUnityPlayer.jar"
         jumboMode="false"
         revision="22.0.1"
         sha1="67c3736317eb057be70ac2395915d952cc3e77bd">
-        <dex dex="C:\Users\Fabian Winquist\Documents\GitHub\RBS-Android\app\build\intermediates\pre-dexed\debug\QCARUnityPlayer-ae87066ab4468edfc2891aecc6c7a8633bdb9e4f.jar" />
+        <dex dex="C:\Users\Tobias\Documents\GitHub\RBS-Android\app\build\intermediates\pre-dexed\debug\QCARUnityPlayer-aa09ed8d7fcb98c572e19ef65c349e44be71d6bc.jar" />
     </item>
     <item
-        jar="C:\Users\Fabian Winquist\Desktop\RBS1\app\libs\QCARUnityPlayer.jar"
+        jar="C:\Users\Tobias\Documents\GitHub\RBS-Android\app\libs\Vuforia.jar"
         jumboMode="false"
         revision="22.0.1"
-        sha1="67c3736317eb057be70ac2395915d952cc3e77bd">
-        <dex dex="C:\Users\Fabian Winquist\Desktop\RBS1\app\build\intermediates\pre-dexed\debug\QCARUnityPlayer-a6cb94dcfc0d501c4e897aa97cfa0c5b3fd3ab33.jar" />
+        sha1="bccdae2108e5625f572836e25a2a785afa2f2e0f">
+        <dex dex="C:\Users\Tobias\Documents\GitHub\RBS-Android\app\build\intermediates\pre-dexed\debug\Vuforia-fafa571aa43eea3ffd51c1837d27e727698d5b42.jar" />
     </item>
     <item
-        jar="C:\Users\Fabian Winquist\Documents\GitHub\RBS-Android\app\libs\unity-classes.jar"
+        jar="C:\Users\Tobias\Documents\GitHub\RBS-Android\app\libs\unity-classes.jar"
         jumboMode="false"
         revision="22.0.1"
         sha1="572e54e8a1acce65303f6688286160e9d2dc4329">
-        <dex dex="C:\Users\Fabian Winquist\Documents\GitHub\RBS-Android\app\build\intermediates\pre-dexed\debug\unity-classes-fded80e07c487da8f5cf8168fcbe36c8d7366823.jar" />
-    </item>
-    <item
-        jar="C:\Users\Fabian Winquist\Documents\GitHub\RBS-Android\app\libs\Vuforia.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="bccdae2108e5625f572836e25a2a785afa2f2e0f">
-        <dex dex="C:\Users\Fabian Winquist\Documents\GitHub\RBS-Android\app\build\intermediates\pre-dexed\debug\Vuforia-b06cb69d75b38998591c4c47df7e351cfcb17cda.jar" />
-    </item>
-    <item
-        jar="C:\Users\Fabian Winquist\Desktop\RBS1\app\libs\Vuforia.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="bccdae2108e5625f572836e25a2a785afa2f2e0f">
-        <dex dex="C:\Users\Fabian Winquist\Desktop\RBS1\app\build\intermediates\pre-dexed\debug\Vuforia-1ae9d392bf0548cafa52129753f92ba11ca0d4d5.jar" />
+        <dex dex="C:\Users\Tobias\Documents\GitHub\RBS-Android\app\build\intermediates\pre-dexed\debug\unity-classes-dc8095b51c48d50fb97ee045a1aa348cdb57d837.jar" />
     </item>
 
 </items>

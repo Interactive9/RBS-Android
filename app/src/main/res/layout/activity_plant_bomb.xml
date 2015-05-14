@@ -7,11 +7,12 @@
     tools:context="com.Interactive9.RBS.PlantBomb"
     android:background="@drawable/rbs_bg">
 
-    <TextView android:text="Select code" android:layout_width="wrap_content"
+    <TextView android:text="Arm bomb"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
+        android:textAppearance="?android:attr/textAppearanceLarge"
         android:id="@+id/textView"
-        android:textSize="30dp"
+        android:textSize="40sp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
 
@@ -68,7 +69,7 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:id="@+id/linearLayout"
-        android:layout_marginBottom="225sp"
+        android:layout_marginBottom="45sp"
         android:layout_above="@+id/button2"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true">
@@ -107,7 +108,29 @@
         android:onClick="plant"
         android:width="175sp"
         android:layout_alignParentBottom="true"
-        android:layout_alignLeft="@+id/textView"
-        android:layout_alignStart="@+id/textView" />
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:id="@+id/imageView3"
+        android:src="@drawable/rbs_box"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Find a good place to hide your bomb and choose a code to arm it."
+        android:id="@+id/textView8"
+        android:layout_marginTop="40sp"
+        android:textSize="20sp"
+        android:width="285dp"
+        android:textColor="#ff10a000"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>

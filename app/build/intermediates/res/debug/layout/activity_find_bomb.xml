@@ -43,15 +43,14 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="The scanner has picked up a bomb in the area... Look for the poster shown below"
+        android:text="The scanner has picked up a bomb in the area. Look for the poster shown below."
         android:id="@+id/textView6"
         android:textSize="20sp"
-        android:width="280sp"
+        android:width="285sp"
         android:textColor="#ff10a000"
+        android:layout_marginTop="39dp"
         android:layout_below="@+id/textView2"
-        android:layout_alignRight="@+id/textView2"
-        android:layout_alignEnd="@+id/textView2"
-        android:layout_marginTop="35dp" />
+        android:layout_centerHorizontal="true" />
 
     <ImageView
         android:layout_width="150dp"
@@ -64,4 +63,4 @@
 
 
 </RelativeLayout>
-<!-- From: file:/C:/Users/Fabian%20Winquist/Documents/GitHub/RBS-Android/app/src/main/res/layout/activity_find_bomb.xml -->
+<!-- From: file:/C:/Users/Tobias/Documents/GitHub/RBS-Android/app/src/main/res/layout/activity_find_bomb.xml -->

@@ -8,14 +8,6 @@
     android:background="@drawable/rbs_bg">
 
 
-    <TextView android:text="Enter disarm code" android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:id="@+id/textView"
-        android:textSize="30dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
-
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="fill_parent"
@@ -110,14 +102,41 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true" />
 
-    <TextView android:text="Enter disarm code" android:layout_width="wrap_content"
+    <TextView android:text="Disarm bomb"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="0dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
         android:id="@+id/textView5677"
-        android:textSize="30dp"
+        android:textSize="40sp"
+        android:textColor="#ffffffff"
         android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button2"
         android:layout_centerHorizontal="true"
-        android:textColor="#ff0eff22" />
+        android:layout_marginBottom="163dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Time to detonation: "
+            android:id="@+id/textView7"
+            android:textSize="20sp"
+            android:layout_gravity="center_vertical"
+            android:layout_above="@+id/button2"
+            android:textColor="#ffbd0200" />
+
+        <TextView android:text="0:30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView"
+            android:textSize="20sp"
+            android:textColor="#ffbd0200" />
+    </LinearLayout>
 
 </RelativeLayout>
-<!-- From: file:/C:/Users/Fabian%20Winquist/Documents/GitHub/RBS-Android/app/src/main/res/layout/activity_puzzle.xml -->
+<!-- From: file:/C:/Users/Tobias/Documents/GitHub/RBS-Android/app/src/main/res/layout/activity_puzzle.xml -->

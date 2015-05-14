@@ -143,15 +143,11 @@ public class puzzleActivity extends Activity {
     public void GameOver(View view){
         String code = "R" + noPickR.getValue()+ " G"+ noPickG.getValue()+  " B"+ noPickB.getValue() + " Y" + noPickY.getValue();
         String RealCode = readFromFile();
-        String disarmed = "KABOOM!!!";
         if(code.equals(RealCode)){
-            disarmed = "Bomb as been disarmed";
             StartOver();
         }else{
             Over();
         }
-        textView.setText(disarmed);
-
     }
 
     public void StartOver(){
