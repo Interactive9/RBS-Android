@@ -100,6 +100,8 @@ public class PlantBomb extends Activity {
         stringBuilder.append(" B" + noPickB.getValue());
         stringBuilder.append(" Y" + noPickY.getValue());
         writeToFile(stringBuilder.toString());
+        final MediaPlayer mp = MediaPlayer.create(this, R.raw.bombhasbeenplanted);
+        mp.start();
 
         String message = "Bomb has been successfully planted";
         new AlertDialog.Builder(PlantBomb.this)
@@ -119,8 +121,7 @@ public class PlantBomb extends Activity {
     private void planted(){
         Intent intent = new Intent(getApplicationContext(), MainActivity.class);
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-        final MediaPlayer mp = MediaPlayer.create(this, R.raw.button_19);
-        mp.start();
+
         startActivity(intent);
     }
 }

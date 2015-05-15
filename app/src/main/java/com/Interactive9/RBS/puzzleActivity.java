@@ -74,6 +74,8 @@ public class puzzleActivity extends Activity {
 
     private void Over(){
         Intent intent = new Intent(this, GameOver.class);
+        final MediaPlayer mp = MediaPlayer.create(this, R.raw.explosion);
+        mp.start();
         startActivity(intent);
     }
 
@@ -152,6 +154,8 @@ public class puzzleActivity extends Activity {
 
     public void StartOver(){
         String message = "Bomb has been successfully disarmed";
+        final MediaPlayer mp = MediaPlayer.create(this, R.raw.success);
+        mp.start();
         new AlertDialog.Builder(puzzleActivity.this)
                 .setTitle("Bomb disarmed")
                 .setMessage(message)

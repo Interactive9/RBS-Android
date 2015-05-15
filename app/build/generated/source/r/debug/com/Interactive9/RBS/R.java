@@ -86,10 +86,13 @@ public final class R {
         public static final int beep_24=0x7f050001;
         public static final int beep_28=0x7f050002;
         public static final int bombbeep=0x7f050003;
-        public static final int button_19=0x7f050004;
-        public static final int button_43=0x7f050005;
-        public static final int button_46=0x7f050006;
-        public static final int combo_close_2=0x7f050007;
+        public static final int bombhasbeenplanted=0x7f050004;
+        public static final int button_19=0x7f050005;
+        public static final int button_43=0x7f050006;
+        public static final int button_46=0x7f050007;
+        public static final int combo_close_2=0x7f050008;
+        public static final int explosion=0x7f050009;
+        public static final int success=0x7f05000a;
     }
     public static final class string {
         public static final int action_settings=0x7f070000;
